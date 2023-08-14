@@ -1,18 +1,54 @@
 body {
-    background-color: rgb(55, 40, 190);
+    background-color: rgb(5, 20, 87);
       padding-left: auto;
       padding-right: auto;
       margin-left: auto;
       margin-right: auto;
-        display: flex;
+        display: grid;
         align-items: center;
+        grid-template-columns: repeat(16, auto);
+        grid-template-rows: repeat(5, 20%);
+        width: 100%;
+        height: 600px;
     }
 
 .p5Canvas{
+    background-color: aqua;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
+    /**se podria obviar pero centra*/
     transform: translate(-50%, -50%);
-    background-color: brown;
-    border-radius: 20px;
+   
+    border-radius: 50px;
+}
+#titulo1, #titulo2, #tituloX{
+    color: bisque;
+}
+.Plauno{
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.Plados{
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-column: 14/16;
+    grid-row: 2/3;
+}
+.habilitar{
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-column: 8/10;
+    grid-row: 5/6;
 }
